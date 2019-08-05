@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A900817B22EDD5E300234337 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900817A22EDD5E300234337 /* MemoViewController.swift */; };
+		A900817D22EDD60200234337 /* DetailedMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900817C22EDD60200234337 /* DetailedMemoViewController.swift */; };
+		A90754EF22EF380F00D483FC /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90754EE22EF380F00D483FC /* FolderViewController.swift */; };
 		A9F5B22C22EB591B00C86AD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F5B22B22EB591B00C86AD6 /* AppDelegate.swift */; };
-		A9F5B22E22EB591B00C86AD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F5B22D22EB591B00C86AD6 /* ViewController.swift */; };
 		A9F5B23122EB591B00C86AD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F5B22F22EB591B00C86AD6 /* Main.storyboard */; };
 		A9F5B23422EB591B00C86AD6 /* Notey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9F5B23222EB591B00C86AD6 /* Notey.xcdatamodeld */; };
 		A9F5B23622EB591C00C86AD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F5B23522EB591C00C86AD6 /* Assets.xcassets */; };
@@ -16,9 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A900817A22EDD5E300234337 /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		A900817C22EDD60200234337 /* DetailedMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedMemoViewController.swift; sourceTree = "<group>"; };
+		A90754EE22EF380F00D483FC /* FolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
 		A9F5B22822EB591B00C86AD6 /* Notey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F5B22B22EB591B00C86AD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9F5B22D22EB591B00C86AD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A9F5B23022EB591B00C86AD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9F5B23322EB591B00C86AD6 /* Notey.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notey.xcdatamodel; sourceTree = "<group>"; };
 		A9F5B23522EB591C00C86AD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,14 +61,48 @@
 			isa = PBXGroup;
 			children = (
 				A9F5B22B22EB591B00C86AD6 /* AppDelegate.swift */,
-				A9F5B22D22EB591B00C86AD6 /* ViewController.swift */,
-				A9F5B22F22EB591B00C86AD6 /* Main.storyboard */,
-				A9F5B23522EB591C00C86AD6 /* Assets.xcassets */,
-				A9F5B23722EB591C00C86AD6 /* LaunchScreen.storyboard */,
+				A9F5B24022EB8CE800C86AD6 /* Controller */,
+				A9F5B24122EB8CF300C86AD6 /* View */,
+				A9F5B24222EB8CF800C86AD6 /* Data Model */,
+				A9F5B24322EB8D0000C86AD6 /* Supporting Files */,
 				A9F5B23A22EB591C00C86AD6 /* Info.plist */,
-				A9F5B23222EB591B00C86AD6 /* Notey.xcdatamodeld */,
 			);
 			path = Notey;
+			sourceTree = "<group>";
+		};
+		A9F5B24022EB8CE800C86AD6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A90754EE22EF380F00D483FC /* FolderViewController.swift */,
+				A900817A22EDD5E300234337 /* MemoViewController.swift */,
+				A900817C22EDD60200234337 /* DetailedMemoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A9F5B24122EB8CF300C86AD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9F5B22F22EB591B00C86AD6 /* Main.storyboard */,
+				A9F5B23722EB591C00C86AD6 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9F5B24222EB8CF800C86AD6 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9F5B23222EB591B00C86AD6 /* Notey.xcdatamodeld */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		A9F5B24322EB8D0000C86AD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9F5B23522EB591C00C86AD6 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9F5B22E22EB591B00C86AD6 /* ViewController.swift in Sources */,
+				A900817B22EDD5E300234337 /* MemoViewController.swift in Sources */,
+				A90754EF22EF380F00D483FC /* FolderViewController.swift in Sources */,
+				A900817D22EDD60200234337 /* DetailedMemoViewController.swift in Sources */,
 				A9F5B22C22EB591B00C86AD6 /* AppDelegate.swift in Sources */,
 				A9F5B23422EB591B00C86AD6 /* Notey.xcdatamodeld in Sources */,
 			);
@@ -296,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mfu.Notey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,7 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mfu.Notey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

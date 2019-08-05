@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Folder" representedClassName="Folder" syncable="YES" codeGenerationType="class">
+        <attribute name="folderName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="memo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Memo" inverseName="parentFolder" inverseEntity="Memo" syncable="YES"/>
+    </entity>
+    <entity name="Memo" representedClassName="Memo" syncable="YES" codeGenerationType="class">
+        <attribute name="memoContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="memoTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="parentFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Folder" inverseName="memo" inverseEntity="Folder" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Folder" positionX="-169.7421875" positionY="-76.87109375" width="128" height="73"/>
+        <element name="Memo" positionX="128.2890625" positionY="34.0546875" width="128" height="88"/>
+    </elements>
+</model>
